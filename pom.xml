@@ -31,8 +31,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.8.0</version>
 					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
+						<source>8</source>
+						<target>8</target>
 					</configuration>
 				</plugin>
 
@@ -41,11 +41,11 @@
 					<artifactId>maven-shade-plugin</artifactId>
 					<version>3.1.0</version>
 					<configuration>
-						<minimizeJar>true</minimizeJar>
+						<minimizeJar>false</minimizeJar>
 						<createSourcesJar>false</createSourcesJar>
 						<shadeSourcesContent>false</shadeSourcesContent>
 						<createDependencyReducedPom>false</createDependencyReducedPom>
-						<shadedArtifactAttached>false</shadedArtifactAttached>
+						<shadedArtifactAttached>true</shadedArtifactAttached>
 						<filters>
 							<filter>
 								<artifact>*:*</artifact>
@@ -217,7 +217,8 @@
 			<groupId>me.clip.deluxetags</groupId>
 			<artifactId>deluxetags</artifactId>
 			<version>1.8.2</version>
-			<scope>provided</scope>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/DeluxeTags-1.8.2-Release.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>me.clip</groupId>
