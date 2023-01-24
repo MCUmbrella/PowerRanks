@@ -18,23 +18,23 @@ storage:
     ssl: false
     verbose: false
 chat:
-  enabled: true
+  enabled: false
   format: '&a[world]&r [usertag] [prefix] [subprefix] [player] [subsuffix] [suffix]&r: [msg]'
 tablist_modification:
-  enabled: true
+  enabled: false
   format: '&a[world]&r [usertag] [prefix] [subprefix] [player] [subsuffix] [suffix]'
 nametagedit:
   prefix: '[usertag] [prefix] [subprefix]'
   suffix: '[subsuffix] [suffix]'
 signs:
-  enabled: true
+  enabled: false
   title_format: '&0[&b%plugin_name%&0]'
 plugin_hook:
   vault_economy: true
   vault_permissions: true
   placeholderapi: true
   deluxetags: false
-  nametagedit: true
+  nametagedit: false
 placeholderapi:
   inject_powerranks_color: false
 announcements:
@@ -48,7 +48,7 @@ announcements:
     enabled: false
     format: '[powerranks_prefix] &6[player] has been demoted to [rank]'
 updates:
-   enable_update_checking: true
+   enable_update_checking: false
    automatic_download_updates: false
    automatic_update_config_files: true
 addon_manager:
